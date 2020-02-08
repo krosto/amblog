@@ -1,8 +1,11 @@
 #Installation instructions
 
-1.- Setup the database using the script provided in the database_script.sql file
-2.- Update the application configuration file (application/config/config.php) with the proper data for your server.
+1.- Create a MySQL database in your server.
+2.- Setup the database using the script provided in the database_script.sql file in this folder.
+3.- Update the application configuration file (application/config/config.php) with the proper data for your server.
   This includes the base path for the url of your application
-3.- Update the database configuration file (application/config/config.php) with the proper data for your server.
+4.- Update the database configuration file (application/config/config.php) with the proper data for your server.
   This includes database user, password and database name you'll use for your application
-4.- Have fun and enjoy the application 
+5.- Update javascript file (assets/js/functions.js) to get live twitter feed operation
+
+Have fun and enjoy the application 
