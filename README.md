@@ -1,0 +1,2 @@
+# amblog
+Amazing Blog
