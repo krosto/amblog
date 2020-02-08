@@ -2,6 +2,10 @@
 function get_twitter_data(twitter_username){
 	var result = "";
 
+/*
+	* UPDATE THIS VARIABLES WITH YOUR TWITTER CREDENTIALS
+*/
+
 	var settings = {
 		oauth_access_token: 'YOUR ACCESS TOKEN HERE',
 		oauth_access_token_secret: 'YOUR SECRET ACCESS TOKEN HERE',
@@ -13,9 +17,13 @@ function get_twitter_data(twitter_username){
 	var getfield = '?screen_name=' + twitter_username + '&count=10';
 	url = url + getfield;
 
+// COMMENT THIS LINES TO GET LIVE TWITTER FEED 	
 	result = JSON.parse(testResponse);
 	return result;
+// END OF COMMENTABLE CODE 
+	
 /*	
+	* UNCOMMENT THIS CODE IN ORDER TO GET TWITTER FEED AVAILABLE
 	$.ajax({
 		type: 'POST',
 		url: url,
@@ -25,6 +33,9 @@ function get_twitter_data(twitter_username){
 			result = JSON.parse(data);
 		} 
 	});
+	return result;
+
+	* END OF TWITTER FEED CODE
 */	
 }
 
