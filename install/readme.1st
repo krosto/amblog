@@ -1,0 +1,8 @@
+#Installation instructions
+
+1.- Setup the database using the script provided in the database_script.sql file
+2.- Update the application configuration file (application/config/config.php) with the proper data for your server.
+  This includes the base path for the url of your application
+3.- Update the database configuration file (application/config/config.php) with the proper data for your server.
+  This includes database user, password and database name you'll use for your application
+4.- Have fun and enjoy the application 
